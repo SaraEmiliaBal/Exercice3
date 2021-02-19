@@ -1,0 +1,61 @@
+.site-title{
+    font-family: $font__title;
+    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"}, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 0;
+    a{
+        text-decoration: none;
+        color: indianred;
+    }
+    
+}
+
+.site-description{
+    font-family: $font__title;
+    font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
+    font-weight: normal;
+    color: rgb(126, 37, 37);
+    margin-top: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body.home::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
+    background-color: lavender;
+    z-index: -1;
+    @include desktop{
+        clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
+        height: 140%;
+    }
+}
+h1{
+    color: #778899;
+    opacity: 50%;
+}
+
+.accueil{
+    
+    ul{
+        list-style-type: none;
+        font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
+        color: #B0C4DE;
+    }
+
+    img{
+        display: block;
+        border-radius: 50%;
+        align-content: center;
+    }
+}

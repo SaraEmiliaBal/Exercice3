@@ -9,3 +9,21 @@
 			"footer";
 	}
 }
+
+
+/*
+	#page - .site (nom de la classe)
+		#masthead - .site-header
+		  .site-branding
+				  .site-title
+				  .site-description
+		  .site-navigation - .main-navigation
+		#primary - .site-main
+		#secondary - .widget-area
+		#colophon - .ste-footer
+
+*/
+
+.site-branding, #primary, #colophon {
+	margin-left: 3rem;
+}
