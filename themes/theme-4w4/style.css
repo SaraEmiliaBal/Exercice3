@@ -98,8 +98,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -129,8 +128,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -268,8 +266,7 @@ fieldset {
  *		`fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -297,8 +294,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -374,13 +370,11 @@ template {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*--------------------------------------------------------------
@@ -650,11 +644,9 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 .no-sidebar .site {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-      grid-template-areas: "header" "main" "footer";
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
 }
 
 /*
@@ -695,8 +687,7 @@ textarea {
 }
 
 .main-navigation ul ul {
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
   top: 100%;
@@ -738,12 +729,8 @@ textarea {
   padding: 0;
   border: 0;
   margin-left: 3rem;
-  -webkit-transition: -webkit-transform .20s;
-  transition: -webkit-transform .20s;
   transition: transform .20s;
-  transition: transform .20s, -webkit-transform .20s;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .menu-toggle:hover,
@@ -757,13 +744,11 @@ textarea {
 }
 
 .menu-toggle:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .main-navigation.toggled .menu-toggle {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 .menu-toggle,
@@ -779,15 +764,9 @@ textarea {
     display: none;
   }
   .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     position: static;
   }
 }
@@ -801,26 +780,20 @@ textarea {
 .comment-navigation .nav-links,
 .posts-navigation .nav-links,
 .post-navigation .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  flex: 1 0 50%;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   text-align: end;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  flex: 1 0 50%;
 }
 
 /* Posts and pages
@@ -910,7 +883,6 @@ textarea {
 --------------------------------------------- */
 .gallery {
   margin-bottom: 1.5em;
-  display: -ms-grid;
   display: grid;
   grid-gap: 1.5em;
 }
@@ -922,43 +894,35 @@ textarea {
 }
 
 .gallery-columns-2 {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .gallery-columns-3 {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .gallery-columns-4 {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .gallery-columns-5 {
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery-columns-6 {
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .gallery-columns-7 {
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .gallery-columns-8 {
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .gallery-columns-9 {
-  -ms-grid-columns: (1fr)[9];
-      grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(9, 1fr);
 }
 
 .gallery-caption {
@@ -990,8 +954,7 @@ textarea {
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -1004,11 +967,9 @@ textarea {
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -1085,21 +1046,18 @@ body.home::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 160%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
-          clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
+  clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
   background-color: lavender;
   z-index: -1;
 }
 
 @media (min-width: 800px) {
   body.home::after {
-    -webkit-clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
-            clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
+    clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
     height: 140%;
   }
 }
@@ -1118,7 +1076,6 @@ h1 {
 .accueil img {
   display: block;
   border-radius: 50%;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 /*# sourceMappingURL=style.css.map */
