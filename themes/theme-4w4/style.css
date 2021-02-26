@@ -662,7 +662,13 @@ textarea {
 
 */
 .site-branding, #primary, #colophon {
-  margin-left: 3rem;
+  margin-left: .5rem;
+}
+
+@media (min-width: 800px) {
+  .site-branding, #primary, #colophon {
+    margin-left: 3rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -672,7 +678,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%;
+  width: 100vw;
 }
 
 .main-navigation ul {
@@ -729,13 +735,6 @@ textarea {
   padding: 0;
   border: 0;
   margin-left: 3rem;
-  transition: transform .20s;
-  transform: scale(1);
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background: #800000;
 }
 
 .menu-toggle:focus {
@@ -745,10 +744,6 @@ textarea {
 
 .menu-toggle:active {
   transform: scale(0.99);
-}
-
-.main-navigation.toggled .menu-toggle {
-  transform: scale(0.7);
 }
 
 .menu-toggle,
@@ -1037,9 +1032,14 @@ textarea {
   margin-top: 0;
 }
 
-body {
+body.home {
   width: 100vw;
   height: 100vh;
+}
+
+body.home #primary {
+  margin-left: 0;
+  width: 100vw;
 }
 
 body.home::after {
@@ -1125,5 +1125,132 @@ header .entry-title {
   100% {
     transform: translateY(0);
   }
+}
+
+/* ---------------------------------------
+burger
+------------------------------------------ */
+/* --------------------------------------------------------------------------------------
+Les variables 
+---------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------------
+Le bouton buger
+----------------------------------------------------------------------------------------- */
+#burger {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#burger div {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#burger div:nth-of-type(1) {
+  background-color: darkgreen;
+  clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+}
+
+#burger div:nth-of-type(2) {
+  background-color: greenyellow;
+  clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+}
+
+#burger div:nth-of-type(3) {
+  background-color: lightgreen;
+  clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+}
+
+/* -----------------------------------------------------------------------------------
+La barre du haut
+-------------------------------------------------------------------------------------- */
+@keyframes ouvreX1 {
+  0% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+  }
+  100% {
+    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+  }
+}
+
+@keyframes fermeX1 {
+  0% {
+    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+  }
+  100% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+  }
+}
+
+.ouvreX1 {
+  animation: ouvreX1 0.1s both;
+}
+
+.fermeX1 {
+  animation: fermeX1 0.1s both;
+}
+
+/* -----------------------------------------------------------------------------------
+La barre du bas
+-------------------------------------------------------------------------------------- */
+@keyframes ouvreX3 {
+  0% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
+  100% {
+    clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
+  }
+}
+
+@keyframes fermeX3 {
+  0% {
+    clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
+  }
+  100% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
+}
+
+.ouvreX3 {
+  animation: ouvreX3 0.1s both;
+}
+
+.fermeX3 {
+  animation: fermeX3 0.1s both;
+}
+
+/* -----------------------------------------------------------------------------------
+La barre du millieu
+-------------------------------------------------------------------------------------- */
+@keyframes ouvreX2 {
+  0% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+  100% {
+    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
+  }
+}
+
+@keyframes fermeX2 {
+  0% {
+    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
+  }
+  100% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+}
+
+.ouvreX2 {
+  animation: ouvreX2 0.1s both;
+}
+
+.fermeX2 {
+  animation: fermeX2 0.1s both;
 }
 /*# sourceMappingURL=style.css.map */

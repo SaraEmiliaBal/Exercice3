@@ -155,6 +155,8 @@ function theme_4w4_scripts() {
 	wp_style_add_data( 'theme-4w4-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'theme-4w4-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	
+	wp_enqueue_script( 'theme-4w4-burger', get_template_directory_uri() . '/js/burger.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

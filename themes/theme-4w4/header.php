@@ -46,7 +46,12 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=b51a00" width="32" height="32"></button>
+			<button id="burger" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<!-- <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=b51a00" width="32" height="32"> -->
+				<div></div>
+        		<div></div>
+				<div class='ouvrirX3'></div>
+			</button>
 			<?php
 			wp_nav_menu(
 				array(

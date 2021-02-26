@@ -18,10 +18,14 @@
     margin-top: 0;
 }
 
-body{
-    
+body.home{
     width: 100vw;
     height: 100vh;
+    
+    #primary{
+        margin-left: 0;
+        width: 100vw;
+    }
 }
 
 body.home::after{
