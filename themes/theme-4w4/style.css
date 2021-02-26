@@ -1082,6 +1082,9 @@ h1 {
 /* ---------------------------------------
 animation
 ------------------------------------------ */
+/*-------------
+    ANIMATION DU HEADER DE LA PAGE 
+---------------*/
 header .site-title {
   animation: anim-1 1s both .5s;
 }
@@ -1105,6 +1108,22 @@ header .site-description {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+/*-------------
+    ANIMATION TITRES DE CHAQUE PAGES 
+---------------*/
+header .entry-title {
+  animation: anim-3 1s both 2s;
+}
+
+@keyframes anim-3 {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
