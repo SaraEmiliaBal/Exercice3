@@ -5,7 +5,7 @@
     margin-bottom: 0;
     a{
         text-decoration: none;
-        color: indianred;
+        color: #20B2AA;
     }
     
 }
@@ -19,6 +19,7 @@
 }
 
 body{
+    
     width: 100vw;
     height: 100vh;
 }
@@ -32,7 +33,7 @@ body.home::after{
     left: 0;
     right: 0;
     clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
-    background-color: lavender;
+    background-color: #E6E6FA;
     z-index: -1;
     @include desktop{
         clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
@@ -53,7 +54,7 @@ h1{
     }
 
     img{
-        display: block;
+        display: flex;
         border-radius: 50%;
         align-content: center;
     }
