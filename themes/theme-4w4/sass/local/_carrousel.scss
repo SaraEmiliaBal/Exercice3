@@ -1,0 +1,20 @@
+//le carrousel est celui qui bouge
+.carrousel{
+    display: flex;
+    width: 300vw;
+    height: 20vh;
+
+    div{
+    
+        &:nth-of-type(1){
+            background-color: #98FB98;
+        }
+        &:nth-of-type(2){
+            background-color: #90EE90;
+        }
+        &:nth-of-type(3){
+            background-color: #3CB371;
+        }
+
+    }//fin du div
+}

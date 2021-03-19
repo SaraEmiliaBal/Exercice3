@@ -1253,4 +1253,25 @@ La barre du millieu
 .fermeX2 {
   animation: fermeX2 0.1s both;
 }
+
+/* ---------------------------------------
+carrousel
+------------------------------------------ */
+.carrousel {
+  display: flex;
+  width: 300vw;
+  height: 20vh;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #98FB98;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #90EE90;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #3CB371;
+}
 /*# sourceMappingURL=style.css.map */
