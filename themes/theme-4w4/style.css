@@ -643,6 +643,10 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+body {
+  overflow-x: hidden;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -758,11 +762,13 @@ textarea {
   .menu-toggle {
     display: none;
   }
+  .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    position: static;
+    height: 2.5rem;
+    width: 100vw;
   }
 }
 
@@ -1050,14 +1056,14 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
-  clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
-  background-color: #E6E6FA;
+  clip-path: polygon(61% 0, 100% 0, 100% 35%, 97% 10%, 87% 32%, 94% 8%, 72% 24%, 90% 6%, 62% 13%, 88% 2%);
+  background-color: #E5C8D5;
   z-index: -1;
 }
 
 @media (min-width: 800px) {
   body.home::after {
-    clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 68%, 94% 19%, 78% 57%, 87% 16%, 48% 45%, 78% 12%, 38% 21%, 73% 5%);
     height: 140%;
   }
 }
@@ -1259,19 +1265,64 @@ carrousel
 ------------------------------------------ */
 .carrousel {
   display: flex;
-  width: 300vw;
+  width: 600vw;
   height: 20vh;
+  transition: transform .5s;
+}
+
+.carrousel div {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carrousel div:nth-of-type(1) {
-  background-color: #98FB98;
+  background-color: #D8FDD8;
 }
 
 .carrousel div:nth-of-type(2) {
-  background-color: #90EE90;
+  background-color: #CEFFC2;
 }
 
 .carrousel div:nth-of-type(3) {
-  background-color: #3CB371;
+  background-color: #98FB98;
+}
+
+.carrousel div:nth-of-type(4) {
+  background-color: #00CC7E;
+}
+
+.carrousel div:nth-of-type(5) {
+  background-color: #339961;
+}
+
+.carrousel div img {
+  height: 10vh;
+  width: 10vw;
+}
+
+.choixCarrousel {
+  display: flex;
+  width: 20vw;
+  height: 5vh;
+  background-color: cadetblue;
+  opacity: 70%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 40vw;
+}
+
+.choixCarrousel a {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.choixCarrousel a:hover {
+  color: yellow;
 }
 /*# sourceMappingURL=style.css.map */

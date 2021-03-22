@@ -45,31 +45,28 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<section class="carroussel">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
+		<!-- DÉBUT CARROUSEL -->
+		<?php
+		if ( is_front_page()) : ?>
+		<section class="carrousel">
+				<div><img src="https://s2.svgbox.net/illlustrations.svg?ic=wacom-tablet&color=000000" width="32" height="32"></div>
+				<div><img src="https://s2.svgbox.net/illlustrations.svg?ic=macbook&color=000000" width="32" height="32"></div>
+				<div><img src="https://s2.svgbox.net/illlustrations.svg?ic=installing&color=000000" width="32" height="32"></div>
+				<div><img src="https://s2.svgbox.net/illlustrations.svg?ic=gaming-mouse&color=000000" width="32" height="32"></div>
+				<div><img src="https://s2.svgbox.net/illlustrations.svg?ic=coding&color=000000" width="32" height="32"></div> 
 		</section>
-		<button id='un'>1</button>
+		<section class="choixCarrousel">
+			<a type="radio" id="un" name="case" value="1"> 1 </a>
+			<a type="radio" id="deux" name="case" value="2"> 2 </a>
+			<a type="radio" id="trois" name="case" value="3"> 3 </a>
+			<a type="radio" id="quatre" name="case" value="4"> 4 </a>
+			<a type="radio" id="cinq" name="case" value="5"> 5 </a>
+		</section>
+		<!-- <button id='un'>1</button> 
 		<button id='deux'>2</button>
-		<button id='trois'>3</button>
-		<script>
-			let bout1 = document.getElementById('un')
-			console.log(bout1.id)
-			let bout2 = document.getElementById('deux')
-			console.log(bout2.id)
-			let bout3 = document.getElementById('trois')
-			console.log(bout3.id)
-			bout1.addEventListener('mousedown', function(){
-
-			})
-			bout2.addEventListener('mousedown', function(){
-				
-			})
-			bout3.addEventListener('mousedown', function(){
-				
-			})
-		</script>
+		<button id='trois'>3</button> -->
+		<?php endif ?>
+		<!-- FIN CARROUSEL -->
 
 		<nav id="site-navigation" class="main-navigation">
 			<button id="burger" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">

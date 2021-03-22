@@ -104,11 +104,13 @@
 		display: none;
 	}
 
+	.main-navigation.toggled ul,
 	.main-navigation ul {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
-		position: static;
+		height: 2.5rem;
+		width: 100vw;
 	}
 }
 

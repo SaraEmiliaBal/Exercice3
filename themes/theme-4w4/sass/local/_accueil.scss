@@ -36,11 +36,11 @@ body.home::after{
     bottom: 0;
     left: 0;
     right: 0;
-    clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
-    background-color: #E6E6FA;
+    clip-path: polygon(61% 0, 100% 0, 100% 35%, 97% 10%, 87% 32%, 94% 8%, 72% 24%, 90% 6%, 62% 13%, 88% 2%);
+    background-color: #E5C8D5;
     z-index: -1;
     @include desktop{
-        clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
+        clip-path: polygon(30% 0, 100% 0, 100% 68%, 94% 19%, 78% 57%, 87% 16%, 48% 45%, 78% 12%, 38% 21%, 73% 5%);
         height: 140%;
     }
 }
