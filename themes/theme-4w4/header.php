@@ -56,6 +56,7 @@
 				<div><img src="https://s2.svgbox.net/illlustrations.svg?ic=coding&color=000000" width="32" height="32"></div> 
 		</section>
 		<section class="choixCarrousel">
+			<!-- CHANGEMENT DES BUTTON EN BUTTON RADIO -->
 			<a type="radio" id="un" name="case" value="1"> 1 </a>
 			<a type="radio" id="deux" name="case" value="2"> 2 </a>
 			<a type="radio" id="trois" name="case" value="3"> 3 </a>

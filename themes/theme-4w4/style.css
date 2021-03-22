@@ -690,7 +690,7 @@ body {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #ADD8E6;
+  background-color: #8C7AA9;
   opacity: 80%;
   position: absolute;
   width: 100%;
@@ -1027,7 +1027,7 @@ body {
 
 .site-title a {
   text-decoration: none;
-  color: #20B2AA;
+  color: #6D6875;
 }
 
 .site-description {
@@ -1071,6 +1071,7 @@ body.home::after {
 h1 {
   color: #778899;
   opacity: 50%;
+  margin-top: 5vh;
 }
 
 .accueil ul {
@@ -1159,17 +1160,17 @@ Le bouton buger
 }
 
 #burger div:nth-of-type(1) {
-  background-color: darkgreen;
+  background-color: #8D5A97;
   clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
 
 #burger div:nth-of-type(2) {
-  background-color: greenyellow;
+  background-color: #630F95;
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
 
 #burger div:nth-of-type(3) {
-  background-color: lightgreen;
+  background-color: #E4C1F9;
   clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 
@@ -1282,19 +1283,19 @@ carrousel
 }
 
 .carrousel div:nth-of-type(2) {
-  background-color: #CEFFC2;
+  background-color: #D8FDD8;
 }
 
 .carrousel div:nth-of-type(3) {
-  background-color: #98FB98;
+  background-color: #D8FDD8;
 }
 
 .carrousel div:nth-of-type(4) {
-  background-color: #00CC7E;
+  background-color: #D8FDD8;
 }
 
 .carrousel div:nth-of-type(5) {
-  background-color: #339961;
+  background-color: #D8FDD8;
 }
 
 .carrousel div img {
@@ -1306,7 +1307,7 @@ carrousel
   display: flex;
   width: 20vw;
   height: 5vh;
-  background-color: cadetblue;
+  background-color: #61517B;
   opacity: 70%;
   margin-top: 2vh;
   margin-bottom: 2vh;

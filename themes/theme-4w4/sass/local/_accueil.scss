@@ -5,7 +5,7 @@
     margin-bottom: 0;
     a{
         text-decoration: none;
-        color: #20B2AA;
+        color: #6D6875;
     }
     
 }
@@ -36,6 +36,7 @@ body.home::after{
     bottom: 0;
     left: 0;
     right: 0;
+    //CHANGEMENT DU CLIP-PATH 
     clip-path: polygon(61% 0, 100% 0, 100% 35%, 97% 10%, 87% 32%, 94% 8%, 72% 24%, 90% 6%, 62% 13%, 88% 2%);
     background-color: #E5C8D5;
     z-index: -1;
@@ -47,6 +48,7 @@ body.home::after{
 h1{
     color: #778899;
     opacity: 50%;
+    margin-top: 5vh;
 }
 
 .accueil{

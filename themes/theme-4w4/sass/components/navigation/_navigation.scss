@@ -7,7 +7,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		background-color: #ADD8E6;
+		background-color: #8C7AA9;
 		opacity: 80%;
 		position: absolute;
 		width: 100%;
@@ -104,6 +104,7 @@
 		display: none;
 	}
 
+	//MODIFICATION DU MENU MOBILE EN MENU STANDARD QUAND L'ECRAN DEVIENT LARGE
 	.main-navigation.toggled ul,
 	.main-navigation ul {
 		display: flex;

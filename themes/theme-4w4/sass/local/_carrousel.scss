@@ -1,4 +1,5 @@
-//le carrousel est celui qui bouge
+//LE CARROUSEL EST CELUI QUI BOUGE
+//MODIFICATION DE LA TAILLE DU CARROUSEL
 .carrousel{
     display: flex;
     width: 600vw;
@@ -11,29 +12,26 @@
         align-items: center;
         justify-content: center;
     
+        //AJOUT DE DEUX DIV 
         &:nth-of-type(1){
             background-color: #D8FDD8;
-            //background-image: url(//Images/TIM.jpeg);
         }
         &:nth-of-type(2){
-            background-color: #CEFFC2;
-            //background-image: url(//Images/Code.jpeg);
+            background-color: #D8FDD8;
         }
         &:nth-of-type(3){
-            background-color: #98FB98;
-            //background-image: url(//Images/LocauxTim.jpeg);
+            background-color: #D8FDD8;
         }
         &:nth-of-type(4){
-            background-color: #00CC7E;
-            //background-image: url(//Images/LocauxTim.jpeg);
+            background-color: #D8FDD8;
         }
         &:nth-of-type(5){
-            background-color: #339961;
-            //background-image: url(//Images/LocauxTim.jpeg);
+            background-color: #D8FDD8;
         }
 
     }//fin du div
 
+    //AJOUT TAILLE DES ICONES
     div img{
         height: 10vh;
         width: 10vw;
@@ -44,7 +42,7 @@
     display: flex;
     width: 20vw;
     height: 5vh;
-    background-color: cadetblue;
+    background-color: #61517B;
     opacity: 70%;
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -60,6 +58,7 @@
         cursor: pointer;
         
     }
+    //AJOUT D'UN HOVER SUR LES a
     a:hover{
         color: yellow;
     }
