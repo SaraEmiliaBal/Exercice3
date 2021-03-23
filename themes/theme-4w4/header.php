@@ -57,11 +57,11 @@
 		</section>
 		<section class="choixCarrousel">
 			<!-- CHANGEMENT DES BUTTON EN BUTTON RADIO -->
-			<a type="radio" id="un" name="case" value="1"> 1 </a>
-			<a type="radio" id="deux" name="case" value="2"> 2 </a>
-			<a type="radio" id="trois" name="case" value="3"> 3 </a>
-			<a type="radio" id="quatre" name="case" value="4"> 4 </a>
-			<a type="radio" id="cinq" name="case" value="5"> 5 </a>
+			<a> <input type="radio" id="un" name="case" value="1"> </a>
+			<a> <input type="radio" id="deux" name="case" value="2"> </a>
+			<a> <input type="radio" id="trois" name="case" value="3"> </a>
+			<a> <input type="radio" id="quatre" name="case" value="4"> </a>
+			<a> <input type="radio" id="cinq" name="case" value="5"> </a>
 		</section>
 		<!-- <button id='un'>1</button> 
 		<button id='deux'>2</button>
