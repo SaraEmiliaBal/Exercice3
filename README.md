@@ -6,6 +6,6 @@ Un site où l'on voit les informations du programme du TIM, comme les cours qui 
 
 Lien site Github:
 
-Lien page Github: 
+Lien page Github: https://saraemiliabal.github.io/Bal_TP1/
 
 
