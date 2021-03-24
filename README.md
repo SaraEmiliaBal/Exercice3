@@ -1,5 +1,11 @@
-<<<<<<< HEAD
-=======
+Le TP1 de Sara Emilia Bal
 
-https://saraemiliabal.github.io/Bal_Exercice2/
->>>>>>> c917ce88ea06c1f1f051eb367645eea4e6ecc5d7
+Groupe 01
+
+Un site où l'on voit les informations du programme du TIM, comme les cours qui sont offert pendant les 6 sessions.
+
+Lien site Github:
+
+Lien page Github: 
+
+
