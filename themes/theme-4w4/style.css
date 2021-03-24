@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 /* Couleur menu principal */
+/* Couleur titre des cours */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -519,15 +520,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #2F4F4F;
 }
 
 a:visited {
-  color: #800080;
+  color: #008080;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #8FBC8F;
 }
 
 a:focus {
@@ -1086,16 +1087,64 @@ h1 {
   margin-top: 5vh;
 }
 
-.accueil ul {
-  list-style-type: none;
-  font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem);
-  color: #B0C4DE;
+.page-header {
+  text-align: center;
+  font-size: 1.4rem;
+  text-shadow: 0.2em 0.2em 0.1em #696969;
+  /*------------- ANIMATION TITRES ARCHIVES ---------------*/
+  animation: anim-4 2s both 2s;
 }
 
-.accueil img {
+/*------------- ANIMATION TITRES ARCHIVES ---------------*/
+@keyframes anim-4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.liste-cours {
   display: flex;
-  border-radius: 50%;
-  align-content: center;
+  flex-direction: column;
+}
+
+.liste-cours section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.liste-cours section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #FDE0D9;
+  background-color: #FFFAF0;
+  box-shadow: 8px 8px 12px #FDE0D9;
+  margin-top: 10vh;
+}
+
+.liste-cours section article p {
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.liste-cours section article a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* ---------------------------------------

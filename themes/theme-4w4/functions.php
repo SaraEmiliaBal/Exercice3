@@ -201,8 +201,9 @@ function extraire_cours_front_page($query){
 	if(!is_admin() && $query->is_front_page() && $query->is_main_query()){
 		$query->set('category_name', 'cours');
 		$query->set('posts_per_page', -1);
-		$query->set('orderby', 'title');
-		$query->set('order', 'asc');
+		$query->set('meta_key', "type_de_cours");
+		$query->set('orderby', array('meta_value' => 'DESC', 'title' => 'ASC'));
+		$query->set('order', 'desc');
 	}
 }
 

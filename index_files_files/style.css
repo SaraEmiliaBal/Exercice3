@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 /* Couleur menu principal */
+/* Couleur titre des cours */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -519,15 +520,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #2F4F4F;
 }
 
 a:visited {
-  color: #800080;
+  color: #008080;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #8FBC8F;
 }
 
 a:focus {
@@ -643,6 +644,10 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+body {
+  overflow-x: hidden;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -686,7 +691,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #ADD8E6;
+  background-color: #8C7AA9;
   opacity: 80%;
   position: absolute;
   width: 100%;
@@ -758,11 +763,25 @@ textarea {
   .menu-toggle {
     display: none;
   }
+  .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    position: static;
+    height: 2.5rem;
+    width: 100vw;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    position: absolute;
+    width: 300px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 2vh;
+    justify-content: space-around;
   }
 }
 
@@ -1021,7 +1040,7 @@ textarea {
 
 .site-title a {
   text-decoration: none;
-  color: #20B2AA;
+  color: #6D6875;
 }
 
 .site-description {
@@ -1050,14 +1069,14 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
-  clip-path: polygon(0 0, 16% 33%, 10% 78%, 0 100%);
-  background-color: #E6E6FA;
+  clip-path: polygon(61% 0, 100% 0, 100% 35%, 97% 10%, 87% 32%, 94% 8%, 72% 24%, 90% 6%, 62% 13%, 88% 2%);
+  background-color: #E5C8D5;
   z-index: -1;
 }
 
 @media (min-width: 800px) {
   body.home::after {
-    clip-path: polygon(0 0, 43% 13%, 21% 76%, 0 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 68%, 94% 19%, 78% 57%, 87% 16%, 48% 45%, 78% 12%, 38% 21%, 73% 5%);
     height: 140%;
   }
 }
@@ -1065,18 +1084,67 @@ body.home::after {
 h1 {
   color: #778899;
   opacity: 50%;
+  margin-top: 5vh;
 }
 
-.accueil ul {
-  list-style-type: none;
-  font-size: clamp(0.8rem, -0.875rem + 8.333vw, 1.5rem);
-  color: #B0C4DE;
+.page-header {
+  text-align: center;
+  font-size: 1.4rem;
+  text-shadow: 0.2em 0.2em 0.1em #696969;
+  /*------------- ANIMATION TITRES ARCHIVES ---------------*/
+  animation: anim-4 2s both 2s;
 }
 
-.accueil img {
+/*------------- ANIMATION TITRES ARCHIVES ---------------*/
+@keyframes anim-4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.liste-cours {
   display: flex;
-  border-radius: 50%;
-  align-content: center;
+  flex-direction: column;
+}
+
+.liste-cours section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.liste-cours section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #FDE0D9;
+  background-color: #FFFAF0;
+  box-shadow: 8px 8px 12px #FDE0D9;
+  margin-top: 10vh;
+}
+
+.liste-cours section article p {
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.liste-cours section article a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* ---------------------------------------
@@ -1153,17 +1221,17 @@ Le bouton buger
 }
 
 #burger div:nth-of-type(1) {
-  background-color: darkgreen;
+  background-color: #8D5A97;
   clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
 
 #burger div:nth-of-type(2) {
-  background-color: greenyellow;
+  background-color: #630F95;
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
 
 #burger div:nth-of-type(3) {
-  background-color: lightgreen;
+  background-color: #E4C1F9;
   clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 
@@ -1252,5 +1320,70 @@ La barre du millieu
 
 .fermeX2 {
   animation: fermeX2 0.1s both;
+}
+
+/* ---------------------------------------
+carrousel
+------------------------------------------ */
+.carrousel {
+  display: flex;
+  width: 600vw;
+  height: 20vh;
+  transition: transform .5s;
+}
+
+.carrousel div {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(4) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(5) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div img {
+  height: 10vh;
+  width: 10vw;
+}
+
+.choixCarrousel {
+  display: flex;
+  width: 80vw;
+  height: 5vh;
+  background-color: #8FBC8F;
+  opacity: 70%;
+  margin-bottom: 2vh;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 10vw;
+}
+
+.choixCarrousel a {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.choixCarrousel a:hover {
+  color: yellow;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,16 +25,35 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-                the_post();
-                $titre = get_the_title();
-                
+            <section class="liste-cours">
 
-			endwhile;
-		endif;
-		?>
+                <?php
+                /* Start the Loop */
+                $precedent = "XXXXXXX";
+                while ( have_posts() ) :
+                    the_post();
+                    $titre_grand = get_the_title();
+                    $session = substr($titre_grand, 4,1);
+                    $nbHeures = substr($titre_grand, -4,3);
+                    $titre = substr($titre_grand, 8,-6);
+                    $sigle = substr($titre_grand, 0,7);
+                    $typeCours = get_field('type_de_cours'); 
+                    if($precedent != $typeCours): ?>
+                        <?php if($precedent != "XXXXXXX"): ?>
+                            </section>
+                        <?php endif ?> 
+                            <section>
+                    <?php endif ?>
+                    <article>
+                        <p> <?php echo $sigle . " - " . $nbHeures . " - " . $typeCours; ?> </p>
+                        <a href="<?php echo get_permalink(); ?>"> <?php echo $titre; ?> </a>
+                        <p> Session : <?php echo $session; ?> </p>
+                    </article>
+                <?php 
+                    $precedent = $typeCours;
+                endwhile; ?>
+            </section>
+        <?php endif; ?>
 
 	</main><!-- #main -->
 

@@ -1,14 +1,14 @@
 a {
-	color: $color__link;
+	color: $color__linkCours;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $color__linkCours-visited;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__linkCours-hover;
 	}
 
 	&:focus {
