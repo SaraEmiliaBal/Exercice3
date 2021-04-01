@@ -1386,4 +1386,69 @@ carrousel
 .choixCarrousel a:hover {
   color: yellow;
 }
+
+/* ---------------------------------------
+carrousel deux
+------------------------------------------ */
+.carrousel {
+  display: flex;
+  width: 600vw;
+  height: 20vh;
+  transition: transform .5s;
+}
+
+.carrousel div {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(4) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div:nth-of-type(5) {
+  background-color: #D8FDD8;
+}
+
+.carrousel div img {
+  height: 10vh;
+  width: 10vw;
+}
+
+.choixCarrousel {
+  display: flex;
+  width: 80vw;
+  height: 5vh;
+  background-color: #8FBC8F;
+  opacity: 70%;
+  margin-bottom: 2vh;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 10vw;
+}
+
+.choixCarrousel a {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.choixCarrousel a:hover {
+  color: yellow;
+}
 /*# sourceMappingURL=style.css.map */
