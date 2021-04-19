@@ -118,16 +118,20 @@ menu tablet
 	.main-navigation.toggled ul,
 	.main-navigation ul {
 		display: flex;
-		position : static;
+		//position : static;
 		justify-content: space-around;
 		a[href="#"]::after {
 			display : none;
 		}
-		li:hover ul{
-			display:block;
-			position:absolute;
+		li:hover ul{ 
+			//sous menu qui apparaît
+			display:flex;
+			flex-direction: column;
+			justify-content: flex-start;
 			width : 300px;
-			height: 500px;
+			//ajout animation
+			animation: anim-sous-menu .5s both cubic-bezier(.46,0,.84,.16);
+			
 		}
 
 		ul {
@@ -136,6 +140,18 @@ menu tablet
 	}
 }
 
+@keyframes anim-sous-menu{
+	0%{
+		opacity: 0;
+		//transform: translateX(0) translateY(100px);
+		transform: scale(0);
+	}
+	100%{
+		opacity: 1;
+		//transform: translateX(0) translateY(0px);
+		transform: scale(1);
+	}
+}
 
 /* --------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------- */

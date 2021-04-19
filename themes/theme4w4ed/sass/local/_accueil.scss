@@ -8,6 +8,10 @@ body.home{
     #primary {
         margin-left:0;
         width : 100vw;
+
+        h1{
+            text-align: center;
+        }
     }
 }
 
@@ -20,12 +24,13 @@ body.home::after {
     bottom:0;
     left : 0;
     right:0;
-    clip-path: polygon( 100% 90%, 100% 100%,  70% 100%);
-    background-color: rgba(121, 183, 241, 0.753);
+    //CHANGEMENT DU CLIP-PATH 
+    clip-path: polygon(61% 0, 100% 0, 100% 35%, 97% 10%, 87% 32%, 94% 8%, 72% 24%, 90% 6%, 62% 13%, 88% 2%);
+    background-color: #E5C8D5;
     z-index : -1;
 
     @include desktop {
-        clip-path: polygon(90% 0 , 100% 0, 100% 100% , 70% 100%);
+        clip-path: polygon(30% 0, 100% 0, 100% 68%, 94% 19%, 78% 57%, 87% 16%, 48% 45%, 78% 12%, 38% 21%, 73% 5%);
         
     }
 }
@@ -78,6 +83,10 @@ body.home::after {
     display:flex;
     flex-direction: column;
 
+    h2{
+        text-align: center;
+    }
+
     section.bloc {
         display : flex;
         flex-direction: row;
@@ -100,6 +109,7 @@ body.home::after {
                 font-size: 1.5rem;
                 font-weight: bold;
                 text-decoration : none;
+                text-align: center;
             }
         } // fin article
 

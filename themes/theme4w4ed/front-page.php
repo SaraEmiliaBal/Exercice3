@@ -10,44 +10,6 @@
 get_header();
 ?>
 
-<!-- section class="carrousel-2">
-	<article class="slide__conteneur">
-		<div class="slide">
-			<img width="150" height="150" src="http://localhost:8080/4w4-1/wp-content/uploads/2021/03/4W4-2-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
-			<div class="slide__info">
-				<p>582-4W4 - 90h - Web</p>
-				<a href="http://localhost:8080/4w4-1/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">Conception d’interfaces et développement Web</a>
-				<p>Session : 4</p>
-			</div>
-		</div>
-	</article>
-	<article class="slide__conteneur">
-		<div class="slide">
-			<img width="150" height="150" src="http://localhost:8080/4w4-1/wp-content/uploads/2021/03/4W4-2-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
-			<div class="slide__info">
-				<p>582-4W4 - 90h - Web</p>
-				<a href="http://localhost:8080/4w4-1/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">Conception d’interfaces et développement Web</a>
-				<p>Session : 4</p>
-			</div>
-		</div>
-	</article>
-	<article class="slide__conteneur">
-		<div class="slide">
-			<img width="150" height="150" src="http://localhost:8080/4w4-1/wp-content/uploads/2021/03/4W4-2-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
-			<div class="slide__info">
-				<p>582-4W4 - 90h - Web</p>
-				<a href="http://localhost:8080/4w4-1/2020/10/07/582-4w4-conception-dinterfaces-et-developpement-web/">Conception d’interfaces et développement Web</a>
-				<p>Session : 4</p>
-			</div>
-		</div>
-	</article>
-</section>
-
-<section class="ctrl-carrousel">
-	<input type="radio" name="rad-carrousel">
-	<input type="radio" name="rad-carrousel">
-	<input type="radio" name="rad-carrousel">
-</section -->
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
